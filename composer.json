@@ -1,0 +1,38 @@
+{
+  "name": "albundy/relation",
+  "description": "Object relations",
+  "license": "MIT",
+  "keywords": [
+  ],
+  "homepage": "https://github.com/vanagnostos",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.1",
+    "container-interop/container-interop": "^1.2"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^0.11.6",
+    "phpunit/phpunit": "^7.5",
+    "squizlabs/php_codesniffer": "^3.4",
+    "vimeo/psalm": "^3.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "AlBundy\\Relation\\": "src/"
+    }
+  },
+  "repositories": [
+  ],
+  "extra": [],
+  "scripts": {
+    "serve": "php -S 0.0.0.0:8080 -t app/ app/index.php",
+    "cs-check": "phpcs",
+    "cs-fix": "phpcbf"
+  },
+  "config": {
+    "secure-http": false,
+    "optimize-autoloader": true,
+    "sort-packages": true
+  }
+}
